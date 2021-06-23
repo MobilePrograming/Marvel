@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MarvelApp1.0</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="kategori" />
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="character_short_bio" />
+    <string name="character_name" />
+    <string name="image_of_character" />
+    <string name="bookmarks">Bookmarks</string>
+    <string name="characters">Characters</string>
+    <string name="creators">Creators</string>
+</resources>
