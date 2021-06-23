@@ -24,28 +24,35 @@
             card_view:layout_constraintStart_toStartOf="parent"
             card_view:layout_constraintTop_toTopOf="parent"
             card_view:layout_constraintVertical_bias="0.498"
-            card_view:srcCompat="@drawable/ic_home_black_24dp" />
+            card_view:srcCompat="@drawable/thor" />
 
         <TextView
             android:id="@+id/tv_character_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:layout_marginBottom="32dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="8dp"
             android:hint="@string/character_name"
-            android:textSize="24sp"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="32sp"
             android:textStyle="bold"
-            card_view:layout_constraintBottom_toBottomOf="@+id/tv_character_short_bio"
+            card_view:layout_constraintBottom_toTopOf="@+id/tv_character_short_bio"
             card_view:layout_constraintStart_toStartOf="@+id/imgViewCharacter" />
 
         <TextView
             android:id="@+id/tv_character_short_bio"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:layout_marginBottom="32dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="16dp"
             android:hint="@string/character_short_bio"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="italic"
             card_view:layout_constraintBottom_toBottomOf="@+id/imgViewCharacter"
+            card_view:layout_constraintEnd_toEndOf="parent"
             card_view:layout_constraintStart_toStartOf="@+id/imgViewCharacter" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

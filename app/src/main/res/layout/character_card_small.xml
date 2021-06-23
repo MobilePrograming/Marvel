@@ -3,52 +3,50 @@
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:id="@+id/card_id"
     android:layout_width="match_parent"
-    android:layout_height="500dp"
-    android:layout_marginLeft="16dp"
-    android:layout_marginTop="12dp"
-    android:layout_marginRight="16dp"
+    android:layout_height="230dp"
     android:clickable="true"
-    android:foreground="?selectableItemBackground"
-    card_view:cardBackgroundColor="#FFFF"
-    card_view:cardCornerRadius="8dp"
-    card_view:contentPadding="10dp">
+    android:foreground="?selectableItemBackground">
 
-    <RelativeLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
-        <LinearLayout
+        <ImageView
+            android:id="@+id/imgViewCharacter"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="30dp"
+            android:contentDescription="@string/image_of_character"
+            android:scaleType="centerCrop"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintHorizontal_bias="0.0"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent"
+            card_view:srcCompat="@drawable/thor" />
 
 
-            <TextView
-                android:id="@+id/name_small"
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                android:gravity="end|center_vertical"
-                android:text="@string/kategori" />
-
-        </LinearLayout>
-
-        <LinearLayout
+        <TextView
+            android:id="@+id/tv_character_name"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="0dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:background="@color/black"
+            android:hint="@string/character_name"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintStart_toStartOf="@+id/imgViewCharacter"
+            card_view:layout_constraintTop_toBottomOf="@+id/imgViewCharacter" />
 
-            <TextView
-                android:id="@+id/description_small"
-                android:layout_width="match_parent"
-                android:layout_height="36dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="44dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginBottom="16dp"
-                android:gravity="top" />
-
-        </LinearLayout>
-
-    </RelativeLayout>
-
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>

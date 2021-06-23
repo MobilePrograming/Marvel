@@ -9,7 +9,6 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.guessaname.marvelapp.databinding.ActivityMainBinding
-import okhttp3.OkHttpClient
 
 class MainActivity : AppCompatActivity() {
 
@@ -36,16 +35,9 @@ class MainActivity : AppCompatActivity() {
 
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
 
-        fetchJson()
 
-    }
 
-    fun fetchJson(){
-        println("attempting to fetch JSON")
 
-        val url = ""
-        val client = OkHttpClient()
-        //client.newCall(request )
     }
 
 }

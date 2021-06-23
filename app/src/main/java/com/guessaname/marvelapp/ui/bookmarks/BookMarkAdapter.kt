@@ -45,6 +45,7 @@ class BookMarkAdapter: RecyclerView.Adapter<BookMarkAdapter.BookMarkViewHolder> 
         init {
             itemNames = itemView.findViewById(R.id.tv_character_name)
             itemDescription = itemView.findViewById(R.id.tv_character_short_bio)
+
         }
 
     }
