@@ -1,25 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
     app:startDestination="@+id/navigation_bookmarks">
 
+
     <fragment
         android:id="@+id/navigation_bookmarks"
         android:name="com.guessaname.marvelapp.ui.bookmarks.BookMarkFragment"
-        android:label="@string/title_home"
+        android:label="@string/bookmarks"
         tools:layout="@layout/fragment_bookmark" />
 
     <fragment
         android:id="@+id/navigation_characters"
         android:name="com.guessaname.marvelapp.ui.characters.CharacterFragment"
-        android:label="@string/title_dashboard"
+        android:label="@string/characters"
         tools:layout="@layout/fragment_character" />
 
     <fragment
         android:id="@+id/navigation_creators"
         android:name="com.guessaname.marvelapp.ui.characters.CharacterFragment"
-        android:label="@string/title_notifications"
+        android:label="@string/creators"
         tools:layout="@layout/fragment_bookmark" />
+
+    <activity
+        android:id="@+id/scrollingActivity"
+        android:name="com.guessaname.marvelapp.ScrollingActivity"
+        android:label="content_scrolling"
+        tools:layout="@layout/content_scrolling" />
+
 </navigation>
