@@ -37,9 +37,11 @@ class BookMarkAdapter : RecyclerView.Adapter<BookMarkAdapter.BookMarkViewHolder>
 
         init {
             itemView.setOnClickListener {
-            //val position: Int = adapterPosition
             val context = itemView.context
-            val intent = Intent(context, ScrollingActivity::class.java).apply{}
+            val intent = Intent(context, ScrollingActivity::class.java).apply{
+                // send data to next activity
+                putExtra("characterName",  itemNames.text)
+            }
             context.startActivity(intent)
             }
         }

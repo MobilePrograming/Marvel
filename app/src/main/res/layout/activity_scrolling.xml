@@ -11,8 +11,9 @@
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/app_bar"
         android:layout_width="match_parent"
-        android:layout_height="500dp"
+        android:layout_height="450dp"
         android:fitsSystemWindows="true"
+        android:background="@drawable/thor"
         android:theme="@style/Theme.MarvelApp10.AppBarOverlay">
 
         <com.google.android.material.appbar.CollapsingToolbarLayout
