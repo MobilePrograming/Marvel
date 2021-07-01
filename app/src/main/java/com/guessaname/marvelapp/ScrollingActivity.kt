@@ -19,6 +19,7 @@ class ScrollingActivity : AppCompatActivity() {
         setSupportActionBar(findViewById(R.id.toolbar))
         binding.toolbarLayout.title = title
 
+        // TEST
         //Picasso.get().load("http://i.imgur.com/DvpvklR.png").into(app_bar.background);
     }
 }
