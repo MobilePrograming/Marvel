@@ -20,16 +20,13 @@ class CharacterAdapter : RecyclerView.Adapter<CharacterAdapter.CharacterViewHold
         return CharacterViewHolder(view)
     }
     override fun onBindViewHolder(viewHolder: CharacterViewHolder, i: Int) {
-
        viewHolder.itemNames.text = names[i]
-
     }
 
     //
     override fun getItemCount(): Int { // # of items
         return names.size
     }
-
 
     inner class  CharacterViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 

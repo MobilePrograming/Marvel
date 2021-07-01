@@ -23,7 +23,6 @@ class CharacterFragment: Fragment () {
         return inflater.inflate(R.layout.fragment_character, container, false)
     }
 
-
      override fun onViewCreated(itemView: View, savedInstanceState: Bundle?) {
         super.onViewCreated(itemView, savedInstanceState)
         character_recyclerview.apply{

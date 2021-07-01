@@ -1,8 +1,7 @@
 package com.guessaname.marvelapp
 
-import android.graphics.Typeface
-import android.os.Bundle
 
+import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.guessaname.marvelapp.databinding.ActivityScrollingBinding
 import com.squareup.picasso.Picasso
