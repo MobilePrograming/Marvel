@@ -35,7 +35,6 @@ class BookMarkFragment : Fragment(), AdapterView.OnItemClickListener {
         }
     }
 
-
     override fun onItemClick(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
         //Toast.makeText(this, "Item $position clicked",Toast.LENGTH_SHORT).show()
     }
