@@ -25,6 +25,12 @@
         android:label="@string/creators"
         tools:layout="@layout/fragment_bookmark" />
 
+    <fragment
+        android:id="@+id/navigation_comics"
+        android:name="com.guessaname.marvelapp.ui.comics.ComicFragment"
+        android:label="@string/creators"
+        tools:layout="@layout/fragment_comic" />
+
     <activity
         android:id="@+id/scrollingActivity"
         android:name="com.guessaname.marvelapp.ScrollingActivity"

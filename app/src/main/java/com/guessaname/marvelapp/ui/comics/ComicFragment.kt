@@ -7,8 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.guessaname.marvelapp.R
-import com.guessaname.marvelapp.ui.bookmarks.BookMarkAdapter
-import kotlinx.android.synthetic.main.content_scrolling.*
+import kotlinx.android.synthetic.main.fragment_comic.*
 
 class ComicFragment : Fragment(){
 
@@ -17,14 +16,14 @@ class ComicFragment : Fragment(){
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.content_scrolling, container, false)
+        return inflater.inflate(R.layout.fragment_comic, container, false)
     }
 
     override fun onViewCreated(itemView: View, savedInstanceState: Bundle?) {
         super.onViewCreated(itemView, savedInstanceState)
         comics_recyclerview.apply{
-            layoutManager = LinearLayoutManager(activity)
-            adapter = comicAdapter()
+            layoutManager = LinearLayoutManager(activity, LinearLayoutManager.HORIZONTAL, false)
+            adapter = ComicAdapter()
         }
     }
 }

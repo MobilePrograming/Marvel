@@ -1,11 +1,8 @@
 package com.guessaname.marvelapp
 
-
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.guessaname.marvelapp.databinding.ActivityScrollingBinding
-import com.squareup.picasso.Picasso
-import org.w3c.dom.Text
 
 class ScrollingActivity : AppCompatActivity() {
 

@@ -1,11 +1,13 @@
 package com.guessaname.marvelapp.ui.comics
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.guessaname.marvelapp.R
+import com.guessaname.marvelapp.ScrollingActivity
 
 
 class ComicAdapter : RecyclerView.Adapter<ComicAdapter.ComicViewHolder> () {
@@ -32,6 +34,15 @@ class ComicAdapter : RecyclerView.Adapter<ComicAdapter.ComicViewHolder> () {
 
         init {
             itemNames = itemView.findViewById(R.id.tv_character_name)
+
+            itemView.setOnClickListener {
+                val context = itemView.context
+                val intent = Intent(context, ScrollingActivity::class.java).apply {
+                    // send data to next activity
+                    putExtra("characterName", itemNames.text)
+                }
+                context.startActivity(intent)
+            }
         }
 
     }
